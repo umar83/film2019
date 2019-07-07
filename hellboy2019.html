@@ -1,36 +1,35 @@
-<!DOCTYPE html>
 <html>
 <head>
 	    <script type="text/javascript" src="https://rawcdn.githack.com/umar83/player891/bb6ff4362eb801cfdb2c32e59cc1d02d83e769e9/jwplayer.js"></script>
              <script>jwplayer.key="8tDNv8+jONqSNxm1FcyM5QINXD2BnLjNhpqUcsE2AzQ=";</script>
 		<title>Test Drive Grabber</title>
 	</head>
-
 	<body>
-				<div id="myElement">Loading the player...</div>
+<div id="myElement">Loading the player...</div>
 <script type="text/javascript">
-var playerInstance = jwplayer("myElement")
+	var playerInstance = jwplayer("myElement")
 playerInstance.setup({
-    width:"100%",
-	height:"100%",
-	aspectratio: "16:9",
-	playlist: [{
-        file: "https://www.googleapis.com/drive/v3/files/10f7o92bEyelnHFQlWh225SfdDrE5hVcr?alt=media&key=AIzaSyBEyekSgpUqNQNV4VNYJ9UEZ3tPZMrIHgY",
-        type: "video/mp4",
-        image: "https://drive.google.com/thumbnail?id=10f7o92bEyelnHFQlWh225SfdDrE5hVcr&authuser=0&sz=w640-h360-n-k-rw",
-	    tracks: [{ 
-            file: "", 
+    playlist: [{
+	image: "https://drive.google.com/thumbnail?id=10f7o92bEyelnHFQlWh225SfdDrE5hVcr&authuser=0&sz=w640-h360-n-k-rw",
+tracks: [{ 
+            file: "https://raw.githubusercontent.com/umar83/subtitle/master/hellboy2019.srt", 
             label: "indonesia",
             kind: "captions",
             "default": true 
-        }]
- }],
-    captions: {
-        color: '#fc6',
-        fontSize: 24,
-        backgroundOpacity: 05
-    }   
-  
-});
-</script>
-</html>
+        },{ 
+            file: "/assets/captions-fr.vtt", 
+            kind: "captions",
+            label: "englis"
+        }],
+				"sources":[{"type": "video/mp4", "label": "1080p", "file": "https://lh3.googleusercontent.com/nEQVwx3wC2aUSFtesYSOncpq42CdDzv_Qap1T24zWCEXk5b9tPzT-OFfv2W8o-7Ca3456KxFg6CmxrfFpYEwqYxbuSsQ1uXw_ipcMgEfZhwj0gzPoGpCseYvkXJl540vMdu4apkzLQ=m37"},{"type": "video/mp4", "label": "720p", "file": "https://lh3.googleusercontent.com/nEQVwx3wC2aUSFtesYSOncpq42CdDzv_Qap1T24zWCEXk5b9tPzT-OFfv2W8o-7Ca3456KxFg6CmxrfFpYEwqYxbuSsQ1uXw_ipcMgEfZhwj0gzPoGpCseYvkXJl540vMdu4apkzLQ=m22"},{"type": "video/mp4", "label": "360p", "file": "https://lh3.googleusercontent.com/nEQVwx3wC2aUSFtesYSOncpq42CdDzv_Qap1T24zWCEXk5b9tPzT-OFfv2W8o-7Ca3456KxFg6CmxrfFpYEwqYxbuSsQ1uXw_ipcMgEfZhwj0gzPoGpCseYvkXJl540vMdu4apkzLQ=m18"}]			}],
+			allowfullscreen: true,
+			width: "100%",
+			aspectratio: "16:9",
+			stretching: "uniform",
+			preload: "metadata",
+			livetimeout: "30",
+			viewability: "true",
+		});
+	</script>
+	</body>
+	</html>
