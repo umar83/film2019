@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript" src="https://rawcdn.githack.com/umar83/player891/bb6ff4362eb801cfdb2c32e59cc1d02d83e769e9/jwplayer.js"></script>
+             <script>jwplayer.key="8tDNv8+jONqSNxm1FcyM5QINXD2BnLjNhpqUcsE2AzQ=";</script>
+</head>
+<body>
+<div id="myElement">Loading...</div> -->
+	<script type="text/javascript">
+		jwplayer("myElement").setup({
+			playlist: [{
+	image: "https://lh3.googleusercontent.com/ZPRYU_Fpqnt17OHjDTMKzh1HvrRpX2jijAdZiZNKa5yGEW6gaD_s05ns9S7IoZWi8GPseqscMBM=w640-h360-n-k-rw",
+tracks: [{ 
+            file: "https://raw.githubusercontent.com/umar83/subtitle/master/Toilet-indo.srt", 
+            label: "indonesia",
+            kind: "captions",
+            "default": true 
+        },{ 
+            file: "https://raw.githubusercontent.com/umar83/subtitle/master/Toilet-englis.srt", 
+            kind: "captions",
+            label: "englis"
+        }],
+				"sources":[{"type": "video/mp4", "label": "720p", "file": "https://lh3.googleusercontent.com/ja6xv9LTZTn1l1BGi2c9hYV8BTYXbxtDkfiGu_ygkQK3vCQbk5Vzv4JgrbZkZE9SZZaFIqicSkw1hOQTh3BUkVUwsJTz4jgsp1VM43uXCQdjDrqBY-Vq-ViW-iwX8BPJPyPgwPM9=m22"},{"type": "video/mp4", "label": "360p", "file": "https://lh3.googleusercontent.com/ja6xv9LTZTn1l1BGi2c9hYV8BTYXbxtDkfiGu_ygkQK3vCQbk5Vzv4JgrbZkZE9SZZaFIqicSkw1hOQTh3BUkVUwsJTz4jgsp1VM43uXCQdjDrqBY-Vq-ViW-iwX8BPJPyPgwPM9=m18"}]			}],
+			allowfullscreen: true,
+			width: "100%",
+			aspectratio: "16:9",
+			stretching: "uniform",
+			preload: "metadata",
+			livetimeout: "30",
+			viewability: "true",
+		});
+	</script>
+</body>
+</html>
