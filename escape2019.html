@@ -1,0 +1,35 @@
+<html>
+<head>
+	    <script type="text/javascript" src="https://rawcdn.githack.com/umar83/player891/bb6ff4362eb801cfdb2c32e59cc1d02d83e769e9/jwplayer.js"></script>
+             <script>jwplayer.key="8tDNv8+jONqSNxm1FcyM5QINXD2BnLjNhpqUcsE2AzQ=";</script>
+		<title>Test Drive Grabber</title>
+	</head>
+	<body>
+<div id="myElement">Loading the player...</div>
+<script type="text/javascript">
+	var playerInstance = jwplayer("myElement")
+playerInstance.setup({
+    playlist: [{
+	image: "https://lh3.googleusercontent.com/ZPRYU_Fpqnt17OHjDTMKzh1HvrRpX2jijAdZiZNKa5yGEW6gaD_s05ns9S7IoZWi8GPseqscMBM=w640-h360-n-k-rw",
+tracks: [{ 
+            file: "https://raw.githubusercontent.com/umar83/subtitle/master/Escape-Plan%20The%20Extractors-SD.480p%5D.srt", 
+            label: "indonesia",
+            kind: "captions",
+            "default": true 
+        },{ 
+            file: "/assets/captions-fr.vtt", 
+            kind: "captions",
+            label: "englis"
+        }],
+				"sources":[{"type": "video/mp4", "label": "1080p", "file": "https://lh3.googleusercontent.com/RSfyt5MWZFE78dk6DKZzsJEa1bRXJbcpEsEp8JzefGPOGO2N5yTCirdBTC-8ScgBSJLruAPP4qa8niyPqk4wdVzczOG0nW9N4AvJLcIuGC_9zWKi-cMt_KSjjC8ywgvHe7pu-hJX0Q=m37"},{"type": "video/mp4", "label": "720p", "file": "https://lh3.googleusercontent.com/RSfyt5MWZFE78dk6DKZzsJEa1bRXJbcpEsEp8JzefGPOGO2N5yTCirdBTC-8ScgBSJLruAPP4qa8niyPqk4wdVzczOG0nW9N4AvJLcIuGC_9zWKi-cMt_KSjjC8ywgvHe7pu-hJX0Q=m22"},{"type": "video/mp4", "label": "360p", "file": "https://lh3.googleusercontent.com/RSfyt5MWZFE78dk6DKZzsJEa1bRXJbcpEsEp8JzefGPOGO2N5yTCirdBTC-8ScgBSJLruAPP4qa8niyPqk4wdVzczOG0nW9N4AvJLcIuGC_9zWKi-cMt_KSjjC8ywgvHe7pu-hJX0Q=m18"}]			}],
+			allowfullscreen: true,
+			width: "100%",
+			aspectratio: "16:9",
+			stretching: "uniform",
+			preload: "metadata",
+			livetimeout: "30",
+			viewability: "true",
+		});
+	</script>
+	</body>
+	</html>
